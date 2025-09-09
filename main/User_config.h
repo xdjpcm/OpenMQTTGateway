@@ -372,7 +372,7 @@ extern ss_cnt_parameters cnt_parameters_array[];
 //#define ZactuatorPWM   "PWM"      //ESP8266, ESP32
 //#define ZsensorSHTC3 "SHTC3" //ESP8266, Arduino, ESP32,  Sonoff RF Bridge
 //#define ZactuatorSomfy "Somfy"    //ESP8266, Arduino, ESP32
-//#define ZgatewaySERIAL   "SERIAL"  //ESP8266, Arduino, ESP32
+#define ZgatewaySERIAL   "SERIAL"  //ESP8266, Arduino, ESP32
 
 /*-------------DEFINE YOUR MQTT ADVANCED PARAMETERS BELOW----------------*/
 #ifndef will_Topic
@@ -546,7 +546,7 @@ extern ss_cnt_parameters cnt_parameters_array[];
 #  define SERIAL_BAUD 19200
 #else
 #  ifndef SERIAL_BAUD
-#    define SERIAL_BAUD 115200
+#    define SERIAL_BAUD 9600
 #  endif
 #endif
 /*--------------MQTT general topics-----------------*/
